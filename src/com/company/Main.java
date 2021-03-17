@@ -1,11 +1,19 @@
 package com.company;
 
-import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+            System.out.println("***************************************");
+            System.out.println("** WELCOME TO THE YEARLY CAR AUCTION **");
+            System.out.println("***************************************");
+
+
+
         Tesla tesla = new Tesla("Tesla", "Model S", 750, 2.3, true);
+        System.out.println(" ");
         System.out.println("This car is a " + tesla.getBrand() + " " + tesla.getModelName());
         System.out.println("It has " + tesla.getHorsepower() + " HP");
         System.out.println("The car weighs " + tesla.getWeightInTons() + " tons");
